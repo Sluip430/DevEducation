@@ -5,7 +5,7 @@ function sumNum() {
     let lastNum = 99;
     let sumEvem = 0;
     let countEven = 0;
-    for (let i = 1; i <= lastNum; i++){
+    for (firstNum; i <= lastNum; i++){
         if (i % 2 === 0){
             sumEvem += i;
             countEven++;
@@ -32,11 +32,6 @@ function isSimple(){
 //isSimple();
 
 //3. Найти корень натурального числа с точностью до целого (рассмотреть вариант последовательного подбора и метод бинарного поиска)
-function findSqrt(){
-    let number = 122;
-    console.log(Math.round(Math.sqrt(number)));
-}
-
 function findNewSqrt(){
     let number = 122;
     let powNum = [0];
