@@ -117,27 +117,52 @@ function getHalfReverse(){
 //getHalfReverse();
 
 //9. Отсортировать массив (пузырьком (Bubble), выбором (Select), вставками (Insert)) 
-function swap(a[0], b[1]) {
-    return a[1], b[0];
-}
-
-function test() {
-    let array1 = [2,4];
-    console.log(array1);
-    if (array1[0] < array1[1]){
-        swap(array1[0], array1[1]);
-        console.log(array1);
-    }
-}
-test();
-
 function bubbleSort() {
     let array = [2,4,6,3,8,12,1];
     for (let i = 0; i < array.length; i++){
         for (let j = 0; j < (array.length - i); j++){
-            if (array[j] > array[j+1]){
-                swap(array[j], array[j+1]);
+            if (array[j] > array[j + 1]){
+                let temp = array[j];
+                array[j] = array[j + 1];
+                array[j + 1] = temp;
             }
         }
     }
+    console.log(array);
 }
+//bubbleSort()
+
+function selectSort(){
+    let array = [2,4,6,3,8,12,1];
+    for (let j = 0; j < array.length; j++){
+        let minElem = array[j];
+        let iMinElem = j;
+        for (let i = 1 + j; i < array.length; i++){
+            if (minElem > array[i]){
+                minElem = array[i];
+                iMinElem = i;
+            }
+        }
+        let temp = array[iMinElem];
+        array[iMinElem] = array[j];
+        array[j] = temp; 
+    }
+    console.log(array);
+}
+//selectSort();
+
+function insertSort(){
+    let array = [2,4,6,3,8,12,1];
+    for (let i = 1; i < array.length; i++) {
+        let minElem = array[i];
+        let j = i - 1; 
+        while (minElem < array[j]) {
+            array[j + 1] = array[j];
+            j--;
+        }
+        array[j + 1] = minElem;
+    }
+        console.log(array);
+}
+//insertSort();
+
