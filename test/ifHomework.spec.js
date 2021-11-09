@@ -60,22 +60,22 @@ describe('ifHomeWork', () => {
     
     describe('On fifthTask', () => {
         it('should be rating F "< 20"', () => {
-            expect(fifthTask(1)).equal(1);
+            expect(fifthTask(1)).equal("F");
         });
         it('should be rating E "20 > < 40"', () => {
-            expect(fifthTask(21)).equal(2);
+            expect(fifthTask(21)).equal("E");
         });
         it('should be rating D "40 > < 60"', () => {
-            expect(fifthTask(42)).equal(3);
+            expect(fifthTask(42)).equal("D");
         });
-        it('should be rating F "60 > < 75"', () => {
-            expect(fifthTask(63)).equal(4);
+        it('should be rating C "60 > < 75"', () => {
+            expect(fifthTask(63)).equal("C");
         });
-        it('should be rating F "75 > < 90"', () => {
-            expect(fifthTask(76)).equal(5);
+        it('should be rating B "75 > < 90"', () => {
+            expect(fifthTask(76)).equal("B");
         });
-        it('should be rating F "90 > < 100"', () => {
-            expect(fifthTask(96)).equal(6);
+        it('should be rating A "90 > < 100"', () => {
+            expect(fifthTask(96)).equal("A");
         });
         it('should be rating out of rating', () => {
             expect(fifthTask(1023)).equal(0);

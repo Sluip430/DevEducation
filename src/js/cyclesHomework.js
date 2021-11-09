@@ -1,20 +1,19 @@
 //1. Найти сумму четных чисел и их количество в диапазоне от 1 до 99
 
-function sumNum() {
-    let firstNum = 1;
-    let lastNum = 99;
+function sumNum(firstNum, lastNum) {
     let sumEvem = 0;
     let countEven = 0;
-    for (firstNum; i <= lastNum; i++){
+    for (let i = firstNum; i <= lastNum; i++){
         if (i % 2 === 0){
             sumEvem += i;
             countEven++;
         }
     }
     console.log(`Sum of Numbers = "${sumEvem}" count of Numbers = "${countEven}"`);
+    return [sumEvem, countEven]
 }
 
-//sumNum();
+sumNum(1, 10);
 
 //2. Проверить простое ли число? (число называется простым, если оно делится только само на себя и на 1)
 function isSimple(){
@@ -84,4 +83,4 @@ function reversNum(){
         process.stdout.write(numStr[i]);
     }
 }
-reversNum();
+//reversNum();

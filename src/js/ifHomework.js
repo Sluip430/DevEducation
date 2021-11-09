@@ -109,27 +109,27 @@ return result;
       switch (true){
           case (rating < 20) :
               console.log("F");
-              return 1;
+              return "F";
               break;
           case ((20 <= rating) && (rating < 40)) :
               console.log("E");
-              return 2;
+              return "E";
               break;
           case ((40 <= rating) && (rating < 60)) :
               console.log("D");
-              return 3;
+              return "D";
               break;
           case ((60 <= rating) && (rating < 75)) :
               console.log("C");
-              return 4;
+              return "C";
               break;
           case ((75 <= rating) && (rating < 90)) :
               console.log("B");
-              return 5;
+              return "B";
               break;
           case ((90 <= rating) && (rating <= 100)) :
               console.log("A");
-              return 6;
+              return "A";
               break;
           default :
               console.log("Error rating must be from 0 to 100");
