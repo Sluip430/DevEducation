@@ -5,7 +5,7 @@ body{
     line-height: 1.6;
     font-family: 'Montserrat', sans-serif;
     color: #fff;
-    background:url("../HomeWork_2/assets/black2.jpg") center no-repeat;
+    background:url("src/assets/black2.jpg") center no-repeat;
     background-size: cover;
     }
 
