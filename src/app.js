@@ -24,7 +24,7 @@ function findOneAnother(array){
     }else{
         result = findNotEven(array);
     }
-    return console.log(result);
+    return result;
 }
 
 function findEven(array){
