@@ -1,7 +1,7 @@
 //1. Получить строковое название дня недели по номеру дня. 
-function getDay() {
-    let numDay = 31;
+function getDay(numDay) {
     isFind = false;
+    let result;
     while(!isFind){
         if (numDay >= 7){
             numDay -=7;
@@ -12,38 +12,45 @@ function getDay() {
     switch(numDay){
         case 1:
             console.log("Sunday");
+            result = "Sunday";
             break;
         case 2:
             console.log("Monday");
+            result = "Monday";
             break;
         case 3:
             console.log("Tuesday");
+            result = "Tuesday";
             break;
         case 4:
             console.log("Wednesday");
+            result = "Wednesday";
             break;
         case 5:
             console.log("Thursday");
+            result = "Thursday";
             break;
         case 6:
             console.log("Friday");
+            result = "Friday";
             break;
         default:
             console.log("Saturday");
+            result = "Saturday";
             break;
     }
+    return result
 }
-//getDay();
+//getDay(31);
 
 //2. *Найти расстояние между двумя точками в двухмерном декартовом пространстве.
-function findLong(){
-    const firstDot = [14,12];
-    const secondDot = [-5, -3];
+function findLong(firstDot, secondDot){
     let long = Math.sqrt(Math.pow(Math.abs(firstDot[0] - secondDot[0]),2) + Math.pow(Math.abs(firstDot[1] - secondDot[1]),2)); 
     //Sorry for use Math. ill show you in arrays.js how i do sqrt and pow;
     console.log(long);
+    return long
 }
-//findLong();
+//findLong([14,12], [5, -3]);
 
 //3. *Вводим число(0-999 999 999 999), получаем строку с прописью числа.
 //Рекурсивная функция для определения параметров числа и рекурсивного вывода чисел грубо говоря по 3
@@ -74,7 +81,7 @@ function getStringNum(number) {
 function getZero(number){
     switch(number){
         case 4:
-            process.stdout.write(" Bilion ");
+            process.stdout.write(" Billion ");
             break;
         case 3:
             process.stdout.write(" Milion ");
