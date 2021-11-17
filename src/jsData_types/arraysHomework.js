@@ -1,6 +1,5 @@
 //1. Найти минимальный элемент массива
-function findMinElem() {
-    let array = [2,4,6,8,12,1]
+function findMinElem(array) {
     let minElem = array[0];
     for (let i = 1; i < array.length; i++){
         if (minElem > array[i]){
@@ -8,12 +7,12 @@ function findMinElem() {
         }
     }
     console.log(minElem);
+    return minElem;
 }
-//findMinElem();
+//findMinElem([2,4,6,8,12,1]);
 
 //2. Найти максимальный элемент массива
-function findMaxElem() {
-    let array = [2,4,6,8,12,1]
+function findMaxElem(array) {
     let maxElem = array[0];
     for (let i = 1; i < array.length; i++){
         if (maxElem < array[i]){
@@ -21,12 +20,12 @@ function findMaxElem() {
         }
     }
     console.log(maxElem);
+    return maxElem;
 }
-//findMaxElem();
+//findMaxElem([2,4,6,8,12,1]);
 
 //3. Найти индекс минимального элемента массива
-function findMinIndex(){
-    let array = [2,4,6,8,12,1]
+function findMinIndex(array){
     let minElem = array[0];
     let indexMin = 0;
     for (let i = 1; i < array.length; i++){
@@ -36,12 +35,12 @@ function findMinIndex(){
         }
     }
     console.log(indexMin+1);
+    return (indexMin + 1);
 }
 //findMinIndex()
 
 //4. Найти индекс максимального элемента массива 
-function findMaxIndex() {
-    let array = [2,4,6,8,12,1]
+function findMaxIndex(array) {
     let maxElem = array[0];
     let maxIndex = 0;
     for (let i = 1; i < array.length; i++){
@@ -51,30 +50,31 @@ function findMaxIndex() {
         }
     }
     console.log(maxIndex+1);
+    return (maxIndex+1);
 }
 //findMaxIndex()
 
 //5. Посчитать сумму элементов массива с нечетными индексами
-function calcSumElem(){
-    let array = [2,4,6,8,12,1];
+function calcSumElem(array){
     let sum = 0;
 
     for (let i = 1; i < array.length; i = i +2){
         sum += array[i];
     }
     console.log(sum);
+    return sum;
 }
 //calcSumElem()
 
 //6. Сделать реверс массива (массив в обратном направлении)
-function getReverse(){
-    let array = [2,4,6,8,12,1];
+function getReverse(array){
     let revArray = [];
 
     for (let i = 0; i < array.length; i++){
         revArray[array.length - i - 1] = array[i];
     }
     console.log(revArray);
+    return revArray;
 }
 //getReverse();
 
@@ -93,8 +93,7 @@ function culcCountElem(){
 //culcCountElem();
 
 //8. Поменять местами первую и вторую половину массива, например, для массива 1 2 3 4, результат 3 4 1 2
-function getHalfReverse(){
-    let array = [2,4,6,3,8,12,1];
+function getHalfReverse(array){
     let revArray = [];
     let countOfHalf = 0;
 
@@ -113,12 +112,12 @@ function getHalfReverse(){
         }
     }
     console.log(revArray);
+    return revArray;
 }
 //getHalfReverse();
 
 //9. Отсортировать массив (пузырьком (Bubble), выбором (Select), вставками (Insert)) 
-function bubbleSort() {
-    let array = [2,4,6,3,8,12,1];
+function bubbleSort(array) {
     for (let i = 0; i < array.length; i++){
         for (let j = 0; j < (array.length - i); j++){
             if (array[j] > array[j + 1]){
@@ -129,11 +128,11 @@ function bubbleSort() {
         }
     }
     console.log(array);
+    return array;
 }
 //bubbleSort()
 
-function selectSort(){
-    let array = [2,4,6,3,8,12,1];
+function selectSort(array){
     for (let j = 0; j < array.length; j++){
         let minElem = array[j];
         let iMinElem = j;
@@ -148,11 +147,11 @@ function selectSort(){
         array[j] = temp; 
     }
     console.log(array);
+    return array
 }
 //selectSort();
 
-function insertSort(){
-    let array = [2,4,6,3,8,12,1];
+function insertSort(array){
     for (let i = 1; i < array.length; i++) {
         let minElem = array[i];
         let j = i - 1; 
@@ -163,6 +162,7 @@ function insertSort(){
         array[j + 1] = minElem;
     }
         console.log(array);
+        return array
 }
 //insertSort();
 
