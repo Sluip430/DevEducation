@@ -1,0 +1,9 @@
+export let array = [];
+export let buttonOne = document.querySelector(".button1");
+export let buttonTwo = document.querySelector(".button2");
+export let buttonThree = document.querySelector(".button3");
+export let buttonFour = document.querySelector(".button4");
+export let buttonFive = document.querySelector(".button5");
+export let gallery = document.querySelector(".gallery");
+export let windowImg = document.querySelector(".windowImg");
+export let buttonWindow = document.querySelector(".buttonWindow");
