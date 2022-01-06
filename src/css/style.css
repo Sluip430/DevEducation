@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.Title{
+  font-size: 100px;
+  text-align: center;
+}
+.images{
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.buttons{
+  font-size: 40px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.button1{
+  color: #fff;
+  text-decoration: none; 
+  user-select: none; 
+  background: rgb(212,75,56);
+  padding: .7em 1.5em; 
+  outline: none; 
+}
+
+.button2{
+  color: #fff;
+  text-decoration: none; 
+  user-select: none; 
+  background: rgb(212,75,56);
+  padding: .7em 1.5em; 
+  outline: none; 
+}
+
+.button3{
+  color: #fff;
+  text-decoration: none; 
+  user-select: none; 
+  background: rgb(212,75,56);
+  padding: .7em 1.5em; 
+  outline: none; 
+}
+
+.button4{
+  color: #fff;
+  text-decoration: none; 
+  user-select: none; 
+  background: rgb(212,75,56);
+  padding: .7em 1.5em; 
+  outline: none; 
+}
+
+.button5{
+  color: #fff;
+  text-decoration: none; 
+  user-select: none; 
+  background: rgb(212,75,56);
+  padding: .7em 1.5em; 
+  outline: none; 
+}
+
+.window{
+  position: absolute;
+  visibility: hidden;       
+  top: 10%;    
+  right: 35%;                    
+}
+
+.buttonWindow { 
+  position: absolute;
+  font-size: 10px;  
+  color: #fff;
+  text-decoration: none; 
+  user-select: none; 
+  background: rgb(212,75,56);
+  padding: .7em 1.5em; 
+  outline: none; 
+}
