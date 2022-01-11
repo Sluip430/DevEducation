@@ -1,3 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-inner{
+    background-color:blanchedalmond;
+    opacity: .5;
+}
+
+.registration-form{
+    margin-top: 100px;
+    height: 600px;
+    width: 400px;
+    border: 2px solid #000;
+    text-align: center;
+}
+
+.registraion-title{
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+}
+
+.main-form{
+    height: 600px;
+    width: 800px;
+    background-color: rgb(28, 143, 219);
+    margin: 0 auto;
+    margin-top: 100px;
+}
 
 body{
     font-size: 15px;
@@ -5,7 +41,7 @@ body{
     line-height: 1.6;
     font-family: 'Montserrat', sans-serif;
     color: #fff;
-    background:url("assets/black2.jpg") center no-repeat;
+    background:url("https://raw.githubusercontent.com/Sluip430/DevEducation/csshtml/src/assets/black2.jpg") no-repeat;
     background-size: cover;
     }
 
@@ -103,4 +139,8 @@ body{
  *:before,
  *:after{
      box-sizing: border-box;
+ }
+
+ .first-name-title{
+     margin-top: 20px;
  }

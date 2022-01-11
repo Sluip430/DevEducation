@@ -1,0 +1,9 @@
+export const firstName = document.querySelector(".first-name-input") as HTMLInputElement;
+export const lastName = document.querySelector(".last-name-input") as HTMLInputElement;
+export const email = document.querySelector(".email-input") as HTMLInputElement;
+export const phoneNubmer = document.querySelector(".phone-input") as HTMLInputElement;
+export const adress = document.querySelector(".adress-input") as HTMLInputElement;
+export const submiButton = document.querySelector(".submit-button");
+export const nameValid = /^[a-zA-Zа-яА-Я'][a-zA-Zа-яА-Я-' ]+[a-zA-Zа-яА-Я']?$/u
+export const emailValid = /^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/
+export const url = 'http://localhost:8000/users';
